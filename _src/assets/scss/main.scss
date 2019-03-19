@@ -1,7 +1,13 @@
-@import 'core/settings';
+@import 'core/variables';
+
+@import 'layout/header';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
-	height: 100vh;
-	font-size: 18px;
+
 }
