@@ -1,21 +1,33 @@
 .header {
     background-color: $rockGrey;
-    font-family: $primaryFont;
-    font-size: $primaryFontSize;
     color: $whiteCloud;
     min-height: 20vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 4rem;
-}
-.header__name-person {
-
-}
-.header__profile {
-
-}
-.header__data-person {
-
+    padding: rem(70px);
+    &__person {
+        margin-bottom: rem(30px);
+    }
+    &__name-person {
+        display: inline-block;
+        font-weight: 400;
+        font-size: rem(40px);
+        border: 2px solid #7EA858;
+        padding: rem(12px) rem(16px);
+        text-transform: uppercase;
+        margin-bottom: rem(12px);
+    }
+    &__profile {
+        font-weight: 400;
+        font-size: rem(24px);
+        text-transform: uppercase;
+    }
+    &__data-person {
+        
+        .data__links {
+            color: inherit;
+        }        
+    }
 }
