@@ -7,6 +7,9 @@
     flex-direction: column;
     justify-content: space-between;
     padding: rem(30px) rem(20px);
+    @media all and (min-width:$mediaTablet) {
+        padding: rem(30px);
+    }
     &__person {
         margin-bottom: rem(30px);
     }
@@ -24,10 +27,23 @@
         font-size: rem(20px);
         text-transform: uppercase;
     }
+    &__data-person {
+        @media all and (min-width:$mediaTablet) {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 
 .data-person__item {
     margin-bottom: .5em;
+    @media all and (min-width:$mediaTablet) {
+        margin-bottom: 0;
+        margin-right: rem(25px);
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 .data__links {
     color: inherit;
