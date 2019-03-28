@@ -1,33 +1,39 @@
 .header {
-    background-color: $rockGrey;
-    color: $whiteCloud;
-    min-height: 20vh;
+    background-color: $color-rockGrey;
+    color: $color-whiteCloud;
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: rem(70px);
+    padding: rem(30px) rem(20px);
     &__person {
         margin-bottom: rem(30px);
     }
     &__name-person {
         display: inline-block;
         font-weight: 400;
-        font-size: rem(40px);
-        border: 2px solid #7EA858;
-        padding: rem(12px) rem(16px);
+        font-size: rem(32px);
+        border: 2px solid $color-greenGrass;
+        padding: rem(16px) rem(20px);
         text-transform: uppercase;
-        margin-bottom: rem(12px);
+        margin-bottom: rem(16px);
     }
     &__profile {
         font-weight: 400;
-        font-size: rem(24px);
+        font-size: rem(20px);
         text-transform: uppercase;
     }
-    &__data-person {
-        
-        .data__links {
-            color: inherit;
-        }        
+}
+
+.data-person__item {
+    margin-bottom: .5em;
+}
+.data__links {
+    color: inherit;
+    text-decoration: none;
+    transition: color .3s ease;
+    &:hover {
+        color: $color-greenGrass;
     }
 }
